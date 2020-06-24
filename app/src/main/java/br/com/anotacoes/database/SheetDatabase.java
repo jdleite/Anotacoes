@@ -19,7 +19,6 @@ public abstract class SheetDatabase extends RoomDatabase {
     public static SheetDatabase getInstance(Context context){
         return Room.databaseBuilder(context, SheetDatabase.class,DATABASE_NAME)
                 .addMigrations()
-                .allowMainThreadQueries()
                 .build();
     }
 
