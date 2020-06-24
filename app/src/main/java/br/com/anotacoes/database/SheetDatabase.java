@@ -12,7 +12,7 @@ import br.com.anotacoes.model.Sheet;
 @Database(entities = {Sheet.class},version = 1,exportSchema = false)
 public abstract class SheetDatabase extends RoomDatabase {
 
-    private static final String DATABASE_NAME = "sheet1";
+    private static final String DATABASE_NAME = "sheet";
     public abstract SheetDAO getSheetDatabase();
 
 
