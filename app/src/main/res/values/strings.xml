@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Anotações</string>
+    <string name="title_remove">Remoção da Anotação</string>
+    <string name="question_remove">Deseja Remover a Anotação ?</string>
+    <string name="yes">Sim</string>
+    <string name="dont">Não</string>
+    <string name="salvar">Salvar</string>
+    <string name="dia_do_mes">Dia do Mês</string>
+    <string name="escreva_aqui">Escreva aqui sua anotação</string>
+</resources>

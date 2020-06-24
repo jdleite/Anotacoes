@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/id_txt_row_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#364f6b"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/id_txt_row_annotation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:paddingEnd="80dp"
+        android:textColor="#364f6b"
+        android:paddingStart="0dp"
+        app:layout_constraintStart_toStartOf="@id/id_txt_row_day"
+        app:layout_constraintTop_toTopOf="@id/id_txt_row_day"
+        app:layout_constraintEnd_toEndOf="@id/id_txt_row_day"
+        app:layout_constraintBottom_toBottomOf="@id/id_txt_row_day"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/design_default_color_error"
+        app:layout_constraintStart_toStartOf="@+id/id_txt_row_annotation"
+        app:layout_constraintTop_toBottomOf="@+id/id_txt_row_annotation"/>
+
+    <ImageView
+        android:id="@+id/id_img_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/id_img_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/edit"
+        app:layout_constraintEnd_toEndOf="@+id/id_img_close"
+        app:layout_constraintStart_toStartOf="@+id/id_img_close"
+        app:layout_constraintTop_toTopOf="@+id/id_img_close"
+        app:layout_constraintBottom_toBottomOf="@+id/id_img_close"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
